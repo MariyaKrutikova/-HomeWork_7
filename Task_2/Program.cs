@@ -52,6 +52,7 @@ double[,] PrintMatrix(double[,] matrix)
     return matrix; 
 }
 
+//Метод поиска элемента матрицы по заданной позиции
 double FindElementInMatrix(int row, int colomn, double[,] matrix)
 {
     if (row >= matrix.GetLength(0) | colomn >= matrix.GetLength(1))
