@@ -4,6 +4,7 @@ m = 3, n = 4.
 1 -3,3 8 -9,9
 8 7,8 -7,1 9*/
 
+//Метод для задания размерности
 int GetDimension(string message)
 {
     int result = 0;
@@ -22,6 +23,7 @@ int GetDimension(string message)
     return result;
 }
 
+//Метод, задающий матрицу
 double[,] InitMatrix(int rows, int colomns)
 {
     double[,] matrix = new double[rows, colomns];
@@ -36,6 +38,7 @@ double[,] InitMatrix(int rows, int colomns)
     return matrix;    
 }
 
+// Метод, печатающий матрицу
 double[,] PrintMatrix(double[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
